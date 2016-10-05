@@ -44,7 +44,6 @@ namespace Microsoft.Extensions.Caching.Memory
 
             var options = optionsAccessor.Value;
             _entries = new ConcurrentDictionary<object, CacheEntry>();
-            // _entryLock = new ReaderWriterLockSlim();
             _setEntry = SetEntry;
             _entryExpirationNotification = EntryExpired;
 
